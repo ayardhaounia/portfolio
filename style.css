@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+} 
+.navbar {
+display: flex;
+justify-content: space-between;
+padding: 1rem;
+background-color: #f4f4f4;
+}
+.menu {
+list-style: none;
+}
+.menu li {
+display: inline;
+}
+hero {
+text-align: center;
+}
+
+/* Portfolio Grid */
+portfolio-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+portfolio-item {
+background-color: #f4f4f4;
+}
+.form-template{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+input{
+    width: 90%;
+        border-radius: 5px;
+
+}
+textarea {
+    width: 90%;
+        border-radius: 12px;
+
+}
+
+.sumbit-contact-button{
+    border-radius: 12px;
+    min-height: 30px;
+    padding: 6px;
+    width: 80%;
+    background-color: green;
+    color: white;
+}
+
+.sumbit-contact-button:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+    opacity: 90%;
+    color: black;
+}

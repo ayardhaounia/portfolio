@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script >
+const this_year =String(new Date().getFullYear())
+console.log("this_year", this_year)
+document.querySelectorAll('.menu a').forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+behavior: 'smooth'
+});
+});
+});
+</script>
+<!-- Navbar --> 
+<header>
+<nav class="navbar">
+<h1 class="logo">My Portfolio</h1>
+<ul class="menu">
+<li><a href="https://github.com/">Home</a></li>
+<li><a href="https://github.com/projects">About</a></li>
+<li><a href="https://github.com/ayardhaounia" target="_blank">Portfolio</a></li>
+<li><a href="https://github.com/copilot">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+<h2>Welcome to My Portfolio</h2>
+<p>I'm a Web Developer passionate about creating beautiful websites.</p>
+<button>Hire Me</button>
+</section>
+
+<!-- About Section -->
+<section id="about">
+<h2>About Me</h2>
+<p>I specialize in front-end development and have experience with modern web technologies.</p>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio">
+<h2>My Work</h2>
+<div class="portfolio-grid navbar">
+<div class="portfolio-item">Project 1</div>
+<div class="portfolio-item">Project 2</div>
+<div class="portfolio-item">Project 3</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+<h2>Contact Me</h2>
+<form action="#" class="form-template">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Your Message" rows="8"></textarea>
+<button type="submit" class="sumbit-contact-button">Send Message</button>
+</form>
+</section>
+
+<!-- Footer -->
+<footer>© {{this_year}} My Portfolio. All rights reserved.</footer>
+
+<!-- JavaScript -->
+</body>
+</html>
